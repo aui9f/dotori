@@ -1,3 +1,6 @@
+
 export default function page(){
-    return <p>Hello NextJs</p>
+    return <div>
+        Home??
+    </div>
 }
