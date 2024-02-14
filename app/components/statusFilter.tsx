@@ -1,5 +1,6 @@
+import styles from './form.module.scss'
 export default function StatusFilter(){
-    return <ul>
+    return <ul className={styles.statusfrom}>
         <li>접수</li>
         <li>처리중</li>
         <li>완료</li>

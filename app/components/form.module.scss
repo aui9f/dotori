@@ -1,0 +1,26 @@
+.searchForm{
+    display: flex;
+    >input{
+        flex: 1;
+        margin-right: 4px;
+    }
+    >button{
+        width: 90px;   
+    }
+}
+// app/style/images/cancel.png app/style/images/clothes.png app/style/images/money.png app/style/images/needle.png
+.statusfrom{
+    display: flex;
+    >li{
+        flex: 1;
+        text-align: center;
+        padding: 16px 8px;
+        background-color: #eeeeee;
+        &:first-child{
+            background-color: salmon;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        
+    }
+}
