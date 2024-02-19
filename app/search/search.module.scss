@@ -1,0 +1,17 @@
+.searchpage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
+}
+.search {
+  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.list {
+  margin-top: 56px;
+  overflow-y: auto;
+}

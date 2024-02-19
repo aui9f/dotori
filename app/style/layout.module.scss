@@ -1,0 +1,45 @@
+.header {
+  background-color: #9e736a;
+  height: 40px;
+}
+.navigation {
+  display: flex;
+  height: 48px;
+  border-top: 1px solid gray;
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  > li {
+    flex: 1;
+    > a {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px;
+    }
+    &.home a {
+      background-image: url("../style/images/menu_home.png");
+    }
+    &.search a {
+      background-image: url("../style/images/menu_search.png");
+    }
+    &.schedule a {
+      background-image: url("../style/images/menu_schedule.png");
+    }
+    &.mypage a {
+      background-image: url("../style/images/menu_mypage.png");
+    }
+  }
+}
+.pages {
+  padding: 8px;
+  width: 100%;
+  height: calc(100% - 48px);
+  > div {
+    height: 100%;
+  }
+}

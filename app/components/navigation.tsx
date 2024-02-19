@@ -1,10 +1,20 @@
 import Link from "next/link";
-
-export default function Navigation(){
-    return <ul>
-        <li><Link href="/">HOME</Link></li>
-        <li><Link href="/search">SEARCH</Link></li>
-        <li><Link href="/schedule">SCHEDULE</Link></li>
-        <li><Link href="/mypage">MY PAGE</Link></li>
+import styles from "style/layout.module.scss";
+export default function Navigation() {
+  return (
+    <ul className={styles.navigation}>
+      <li className={styles.home}>
+        <Link href="/"></Link>
+      </li>
+      <li className={styles.search}>
+        <Link href="/search"></Link>
+      </li>
+      <li className={styles.schedule}>
+        <Link href="/schedule"></Link>
+      </li>
+      <li className={styles.mypage}>
+        <Link href="/mypage"></Link>
+      </li>
     </ul>
+  );
 }
