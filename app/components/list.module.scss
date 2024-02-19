@@ -1,41 +1,39 @@
-.repaire{
-    >li{
-        margin-bottom: 8px;
-        >div{
-            border: 1px solid gray;
-            padding: 8px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32);
-            &.ready .icon{
-                background-image: url('../style/images/clothes.png');
-            }
-            &.progress .icon{
-                background-image: url('../style/images/needle.png');
-            }
-            &.complate .icon{
-                background-image: url('../style/images/money.png');
-            }
-            &.cancel .icon{
-                background-image: url('../style/images/cancel.png');
-            }
-            .status{
-               display: flex;
-               align-items: center;
-               justify-self: center;
-            }
-            .icon{
-                width: 32px;
-                height: 32px;
-                // background-image: url('../style/images/cancel.png');
-                background-size: 32px;
-                background-repeat: no-repeat;
-                margin-right: 4px;
-            }
-            .text{
-                >p{
-                    margin-top: 8px;
-                }
-            }
-        }
+.itemsList {
+  margin-bottom: 8px;
+  > div {
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32);
+    &.ready .icon {
+      background-image: url("../style/images/clothes.png");
     }
+    &.progress .icon {
+      background-image: url("../style/images/needle.png");
+    }
+    &.complate .icon {
+      background-image: url("../style/images/money.png");
+    }
+    &.cancel .icon {
+      background-image: url("../style/images/cancel.png");
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      // background-image: url('../style/images/cancel.png');
+      background-size: 32px;
+      background-repeat: no-repeat;
+      margin-right: 4px;
+    }
+    .text {
+      > p {
+        margin-top: 8px;
+      }
+    }
+  }
 }

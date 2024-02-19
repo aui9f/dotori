@@ -1,22 +1,23 @@
-import styles from './list.module.scss'
-
-export default function RepairList(){
-    return  <ul className={styles.repaire}>
-        <li>
-            <div className={styles.ready}>
-                <div className={styles.status}>
-                    <div className={styles.icon}></div>
-                    <p>접수</p>
-                </div>
-                <div className={styles.text}>
-                    <p>이름</p>
-                    <p>연락처</p>
-                    <p>(+1일) 접수일</p>
-                </div>
-                
-            </div>
-        </li>
-
+import styles from "./list.module.scss";
+import { items } from "schedule/page";
+export default function RepairList({ name, phone, createAt, status }: items) {
+  return (
+    <li className={styles.itemsList}>
+      <div className={`${styles[status]}`}>
+        <div className={styles.status}>
+          <div className={styles.icon}></div>
+          <p>접수: {status}</p>
+        </div>
+        <div className={styles.text}>
+          <p>{name}</p>
+          <p>{phone}</p>
+          <p>(+1일) 접수일 {createAt}</p>
+        </div>
+      </div>
+    </li>
+  );
+  {
+    /* 
         <li>
             <div className={styles.progress}>
                 <div className={styles.status}>
@@ -61,9 +62,8 @@ export default function RepairList(){
                 </div>
                 
             </div>
-        </li>
+        </li> */
+  }
 
-
-    </ul>
-    
+  // <ul className={styles.repaire}> </ul>
 }

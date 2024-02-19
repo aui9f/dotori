@@ -1,5 +1,5 @@
 import Search from "../components/userSearch";
-import List from "../components/repairList";
+// import List from "../components/repairItem";
 import Filter from "../components/statusFilter";
 import styles from "./search.module.scss";
 
@@ -11,8 +11,8 @@ export default function SearchPage() {
       </div>
 
       <div className={styles.list}>
-        <List />
-        <button type="button">더보기</button>
+        {/* <List /> */}
+        {/* <button type="button">더보기</button> */}
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "style/layout.module.scss";
 export default function Herder() {
   return (

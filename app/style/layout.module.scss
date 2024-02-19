@@ -24,14 +24,26 @@
     &.home a {
       background-image: url("../style/images/menu_home.png");
     }
+    &.home_active a {
+      background-image: url("../style/images/menu_home_active.png");
+    }
     &.search a {
       background-image: url("../style/images/menu_search.png");
+    }
+    &.search_active a {
+      background-image: url("../style/images/menu_search_active.png");
     }
     &.schedule a {
       background-image: url("../style/images/menu_schedule.png");
     }
+    &.schedule_active a {
+      background-image: url("../style/images/menu_schedule_active.png");
+    }
     &.mypage a {
       background-image: url("../style/images/menu_mypage.png");
+    }
+    &.mypage_active a {
+      background-image: url("../style/images/menu_mypage_active.png");
     }
   }
 }
